@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Meu Blog</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'sobre' %}">Sobre mim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="profile-container">
+            <img src="{% static 'images/perfil.jpeg' %}" alt="Perfil" class="profile-img">
+            <h1>Sobre Mim</h1>
+            <p class="profile-description">
+                Olá! Meu nome é Evvelyn. Sou apaixonado por desenvolvimento web e tenho experiência em criar aplicativos e sites usando diversas tecnologias. 
+                <br><br>
+                Além do desenvolvimento web, tenho interesse em design gráfico, fotografia e música. Sempre estou em busca de novos desafios e oportunidades para aprender e crescer na minha carreira.
+                <br><br>
+                Aqui estão alguns dos meus cursos e experiências:
+                <ul>
+                    <li>Curso de Desenvolvimento Web com Django</li>
+                    <li>Especialização em Frontend com React</li>
+                    <li>Certificação em Design UX/UI</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
