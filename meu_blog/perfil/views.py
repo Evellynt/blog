@@ -8,3 +8,4 @@ def home(request):
 
 def sobre(request):
     return render(request, 'perfil/sobre.html')
+

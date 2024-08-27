@@ -8,9 +8,120 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #f8f9fa;
+        }
+
+        nav.navbar {
+            margin-bottom: 30px;
+            background-color: #800080;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            margin-right: 15px;
+            color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff00ff;
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 800px;
+        }
+
+        /* Estilo do perfil */
+        .profile-container {
+            background-color: #1c1c1c;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 20px;
+            border: 4px solid #ff00ff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ff00ff;
+            margin-bottom: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            color: #ffffff;
+        }
+
+        .profile-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .profile-description ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .profile-description ul li {
+            background: #333333;
+            color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .profile-description ul li:hover {
+            background-color: #ff00ff;
+            color: #000000;
+        }
+
+        /* Botões */
+        .btn-custom {
+            background-color: #ff00ff;
+            color: #000000;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background-color: #f8f9fa;
+            color: #ff00ff;
+        }
+
+        .text-fucsia {
+            color: #ff00ff; /* Cor fúcsia */
+        }
+        
+    </style>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Meu Blog</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
@@ -29,16 +140,18 @@
             <img src="{% static 'images/perfil.jpeg' %}" alt="Perfil" class="profile-img">
             <h1>Sobre Mim</h1>
             <p class="profile-description">
-                Olá! Meu nome é Evvelyn. Sou apaixonado por desenvolvimento web e tenho experiência em criar aplicativos e sites usando diversas tecnologias. 
+                Olá! Sou Evellyn Thauany, tenho 18 anos, moro em Pau dos Ferros - RN, uma entusiasta do desenvolvimento web com uma paixão por criar experiências digitais impactantes. Adoro transformar ideias em realidade, utilizando uma ampla gama de tecnologias para desenvolver aplicativos e sites que realmente fazem a diferença.
                 <br><br>
-                Além do desenvolvimento web, tenho interesse em design gráfico, fotografia e música. Sempre estou em busca de novos desafios e oportunidades para aprender e crescer na minha carreira.
+                Além do desenvolvimento web, também me interesso por design gráfico, fotografia e música. Essas paixões complementam minha carreira, ajudando-me a criar projetos que são tanto funcionais quanto visualmente atraentes.
                 <br><br>
                 Aqui estão alguns dos meus cursos e experiências:
                 <ul>
-                    <li>Curso de Desenvolvimento Web com Django</li>
-                    <li>Especialização em Frontend com React</li>
-                    <li>Certificação em Design UX/UI</li>
+                    <li><span class="text-fucsia">Desenvolvimento Web com Django:</span> Onde aprendi a construir aplicações robustas e escaláveis.</li>
+                    <li><span class="text-fucsia">Especialização em Frontend com React:</span> Focando em criar interfaces de usuário dinâmicas e responsivas.</li>
+                    <li><span class="text-fucsia">Certificação em Design UX/UI:</span> Que me permite criar experiências de usuário intuitivas e centradas nas necessidades dos usuários.</li>
+                    <li>Vamos criar algo incrível juntos? Estou sempre pronta para novos projetos!</li>
                 </ul>
+                
             </p>
         </div>
     </div>
